@@ -71,5 +71,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
 # react-hookrouter-example
+<<<<<<< HEAD
 using a navbar with hookrouter
 >>>>>>> Initial commit
+=======
+An example react project using a navbar with hookrouter
+
+![image](https://github.com/user-attachments/assets/e769cdb8-6382-4ce5-ad99-9f4c16df8301)
+>>>>>>> Update README.md
