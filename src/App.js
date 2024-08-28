@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./navbar";
+import { useRoutes } from "hookrouter";
+import Home from "./Home";
+import Products from "./Products";
+import Users from "./Users";
+
+const routes = {
+  "/": () => <Home />,
+  "/home": () => <Home />,
+  "/users": () => <Users />,
+  "/products": () => <Products />
+};
 
 function App() {
+  const routeResult = useRoutes(routes);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Navbar>
+      {routeResult || <h1>404 Not Found</h1>}
+    </Navbar>
   );
 }
 
