@@ -15,9 +15,10 @@ function App() {
   const routeResult = useRoutes(routes);
 
   return (
-    <Navbar>
-      {routeResult || <h1>404 Not Found</h1>}
-    </Navbar>
+    <div>
+      <Navbar/>
+    {  routeResult || <h1>404 Not Found</h1> }
+    </div>
   );
 }
 

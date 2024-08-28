@@ -20,3 +20,10 @@
   .navbar-item {
     padding: 0 20px;
   }
+
+  .invisible-link {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Sets the text color to w
+    curspr: pointer; /* Changes the cursor to a hand */
+    /* Or use 'display: none;' if you want to remove it from the document flow */
+  }
